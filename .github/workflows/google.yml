@@ -24,7 +24,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           
 
-      # Build the Docker image
+      # Build the Docker images
       - name: Build Docker image
         run: |
                docker build -t venky2821/my-backend:latest -f Dockerfile.backend .
